@@ -24,7 +24,6 @@ df["daily_return"] = df["close"].pct_change()
 
 # Medias móviles (tendencia de corto y mediano plazo)
 df["sma_7"] = df["close"].rolling(window=7).mean()
-df["sma_21"] = df["close"].rolling(window=21).mean()
 
 # Volatilidad (desviación estándar móvil de 7 días)
 df["volatility_7"] = df["close"].rolling(window=7).std()
@@ -47,7 +46,6 @@ features = [
     "volume",
     "daily_return",
     "sma_7",
-    "sma_21",
     "volatility_7",
     "daily_range",
     "volume_change",
