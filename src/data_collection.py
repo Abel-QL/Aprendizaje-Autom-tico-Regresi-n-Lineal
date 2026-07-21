@@ -1,6 +1,6 @@
 """
 data_collection.py
-Obtención de datos históricos de META usando la API de Alpaca Markets.
+Obtención de datos históricos de META usando la API de Alpaca.
 Requiere: pip install alpaca-py pandas
 """
 
