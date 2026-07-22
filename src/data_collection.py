@@ -23,6 +23,13 @@ request = StockBarsRequest(
     start=datetime(2018, 1, 1),
     end=datetime(2026, 7, 1),
 )
+"""
+request = StockBarsRequest(
+    symbol_or_symbols=["META"],
+    timeframe=TimeFrame.Day,
+    start=datetime(2026, 5, 1),
+    end=datetime(2026, 7, 1),
+)"""
 
 bars = client.get_stock_bars(request)
 df = bars.df.reset_index()
@@ -32,4 +39,5 @@ print(df.head())
 
 # Guardar los datos en un archivo CSV
 df.to_csv("DATA/raw/meta_historico.csv", index=False)
+# df.to_csv("DATA/nuevos_datos.csv", index=False)
 print("Guardado en DATA/raw/meta_historico.csv")

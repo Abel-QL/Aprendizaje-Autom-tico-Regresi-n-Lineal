@@ -3,6 +3,8 @@ Preprocesamiento del dataset histórico de META para el modelo de regresión.
 Requiere: pip install pandas numpy scikit-learn
 """
 
+import joblib
+import os
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import StandardScaler
@@ -69,3 +71,8 @@ processed_df["target_close_next"] = y.reset_index(drop=True)
 processed_df.to_csv("DATA/processed/meta_procesado.csv", index=False)
 
 print("Guardado en data/processed/meta_procesado.csv")
+
+
+os.makedirs("models", exist_ok=True)
+joblib.dump(scaler, "models/scaler.pkl")
+print("Scaler guardado en models/scaler.pkl")
