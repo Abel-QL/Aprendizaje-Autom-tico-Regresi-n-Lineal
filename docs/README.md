@@ -14,6 +14,11 @@ Desarrollar un sistema capaz de predecir el precio futuro de un activo financier
 - `matplotlib` — visualización
 - `alpaca-py` — obtención de datos históricos vía Alpaca Markets API
 
+## ANTES DE INICIAR EL PROYECTO
+
+- usa esta linea en el terminar para instalar las librerias necesarias
+  `pip install -r requirements.txt`
+
 ## 🔄 Pipeline del proyecto
 
 1. **Recolección de datos** — Extracción de datos históricos (precios, volumen, indicadores) mediante la API de Alpaca.
