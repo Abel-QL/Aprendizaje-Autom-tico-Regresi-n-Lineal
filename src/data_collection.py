@@ -22,6 +22,7 @@ request = StockBarsRequest(
     start=datetime(2018, 1, 1),
     end=datetime(2026, 7, 1),
 )
+
 """
 request = StockBarsRequest(
     symbol_or_symbols=["META"],

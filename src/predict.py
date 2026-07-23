@@ -72,3 +72,5 @@ if __name__ == "__main__":
 
     resultado.to_csv("DATA/predicciones.csv", index=False)
     print("\nPredicciones guardadas en DATA/predicciones.csv")
+
+    # python src/predict.py --csv DATA/raw/predicciones.csv
