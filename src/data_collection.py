@@ -37,7 +37,6 @@ df = bars.df.reset_index()
 print(f"Registros obtenidos: {len(df)}")
 print(df.head())
 
-# Guardar los datos en un archivo CSV
 df.to_csv("DATA/raw/meta_historico.csv", index=False)
 # df.to_csv("DATA/nuevos_datos.csv", index=False)
 print("Guardado en DATA/raw/meta_historico.csv")
